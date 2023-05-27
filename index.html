@@ -11,26 +11,22 @@
 <body>
     <h1>JavaScript</h1>
     <script>
-        // 區域   var區域全域分不清楚
-        /**
+        /**區域   var區域全域分不清楚
+         * const就完全不能改了後面也不能+...
          * 
-        // const就完全不能改了後面也不能+...
          * 
          * 
          */
-        // let/var/const的用法
-        // 園面積
         const PI = 3.1415926;
         let radius = 0;
-
+        console.log(radius)
         while (true) {
             radius = prompt("請輸入半徑:");
             // ! => not
             if (!isNaN(radius)) {
                 break;
-            } else {
-                alert("請輸入數值");
-            }
+            } alert("請輸入數值");
+
         }
 
         let area = radius ** 2 * PI;
